@@ -65,6 +65,13 @@ int main()
 
     sum = sumMainDiagonal(array, rows, columns);
     std::cout<<"The sum of the elements of the main diagonal us equal to: "<< sum<<std::endl;
+    
+    
+   //Free space after the use of array:
+    for (int count = 0; count < rows; ++count)
+    {
+        delete[] array[count];
+    };
 
     return 0;
 }
